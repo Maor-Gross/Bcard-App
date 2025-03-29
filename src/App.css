@@ -1,0 +1,28 @@
+.spinner {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+footer {
+  max-width: 1300px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container-cards {
+    justify-content: center !important;
+  }
+
+  .card-info-body {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90% !important;
+  }
+}
