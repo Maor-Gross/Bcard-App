@@ -77,7 +77,7 @@ const NavBars: FunctionComponent<NavBarsProps> = ({
             Bcard
           </a>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler bg-light"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -187,19 +187,17 @@ const NavBars: FunctionComponent<NavBarsProps> = ({
           </div>
         )}
 
-        <div>
-          {(isAdmin || isBusiness) && (
-            <>
-              <i
-                className="bi bi-person-square text-primary"
-                style={{ cursor: "pointer" }}
-                onClick={() => navigate("/my-cards")}>
-                <br />
-                My Cards
-              </i>
-            </>
-          )}
-        </div>
+        {(isAdmin || isBusiness) && (
+          <div>
+            <i
+              className="bi bi-person-square text-primary"
+              style={{ cursor: "pointer" }}
+              onClick={() => navigate("/my-cards")}>
+              <br />
+              My Cards
+            </i>
+          </div>
+        )}
       </footer>
     </>
   );

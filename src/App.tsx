@@ -18,6 +18,7 @@ import CardInfo from "./components/CardInfo";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SandBox from "./components/SandBox";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 function App() {
   const [filteredCards, setFilteredCards] = useState<Card[]>([]);
