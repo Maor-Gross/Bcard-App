@@ -16,7 +16,7 @@ const CardInfo: FunctionComponent<CardInfoProps> = () => {
   const [liked, setLiked] = useState(false);
 
   useEffect(() => {
-    if (cardId && user) {
+    if (cardId) {
       getCardById(cardId)
         .then((res) => {
           setCard(res.data);
