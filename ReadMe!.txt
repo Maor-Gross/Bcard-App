@@ -18,8 +18,8 @@ Server Communication: HTTP requests via AXIOS with error handling
 Installation & Setup
 Download the Project:
 
-git clone [Git Repository URL]
-cd bcard-app
+https://github.com/Maor-Gross/Bcard-App
+cd Bcard-App
 npm i
 
 Install Dependencies:
