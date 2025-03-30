@@ -11,12 +11,16 @@ const DarkMode: FunctionComponent<DarkModeProps> = () => {
   useEffect(() => {
     const body = document.querySelector("body");
     const footer = document.querySelector("footer");
+    const toggler = document.querySelector(".navbar-toggler") as HTMLElement;
 
     if (body) {
       body.setAttribute("data-bs-theme", darkMode ? "dark" : "light");
     }
     if (footer) {
       footer.style.backgroundColor = darkMode ? "black" : "white";
+    }
+    if (toggler) {
+      toggler.style.backgroundColor = darkMode ? "black" : "white";
     }
 
     localStorage.setItem("darkMode", String(darkMode));

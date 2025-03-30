@@ -84,9 +84,9 @@ const EditCard: FunctionComponent<EditCardProps> = () => {
 
   return (
     <>
-      <div className="w-100 d-flex flex-column align-items-center mb-5 py-3">
+      <div className="w-100 d-flex flex-column align-items-center mb-5 py-3 container-form">
         <h1 className="display-1 text-center mb-4">Edit card</h1>
-        <form className="w-50 mb-5 z-0" onSubmit={formik.handleSubmit}>
+        <form className="w-50 mb-5 form" onSubmit={formik.handleSubmit}>
           <div className="form-floating mb-3">
             <input
               type="text"

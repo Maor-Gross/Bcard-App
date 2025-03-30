@@ -77,7 +77,7 @@ const NavBars: FunctionComponent<NavBarsProps> = ({
             Bcard
           </a>
           <button
-            className="navbar-toggler bg-light"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -120,8 +120,8 @@ const NavBars: FunctionComponent<NavBarsProps> = ({
                 </li>
               )}
             </ul>
-            <div className="d-flex gap-3 align-items-center">
-              <form className="d-flex" role="search">
+            <div className="d-flex gap-3 align-items-center phone-navbar">
+              <form className="d-flex form" role="search">
                 <input
                   className="form-control me-2"
                   type="search"
@@ -130,37 +130,51 @@ const NavBars: FunctionComponent<NavBarsProps> = ({
                   onInput={search}
                 />
               </form>
-              <DarkMode />
-              {userLogin ? (
-                <img
-                  src={user?.image?.url}
-                  alt={user?.image?.alt}
-                  className="rounded-circle"
-                  style={{ width: "2rem", height: "2rem", cursor: "pointer" }}
-                  onClick={handleLogout}
-                />
-              ) : (
-                <div>
-                  <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
-                      <a
-                        className="nav-link active text-light"
-                        aria-current="page"
-                        href="/register">
-                        SIGN UP
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a
-                        className="nav-link active text-light"
-                        aria-current="page"
-                        href="/login">
-                        LOGIN
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              )}
+              <div className="user-actions">
+                <DarkMode />
+                {userLogin ? (
+                  <img
+                    src={user?.image?.url}
+                    alt={user?.image?.alt}
+                    className="rounded-circle"
+                    style={{ width: "2rem", height: "2rem", cursor: "pointer" }}
+                    onClick={handleLogout}
+                  />
+                ) : (
+                  <div>
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0 sign-up-login">
+                      <li className="nav-item">
+                        <a
+                          className="nav-link active text-light sign-up-text"
+                          aria-current="page"
+                          href="/register">
+                          SIGN UP
+                        </a>
+                        <a
+                          className="nav-link active text-light sign-up-icon"
+                          aria-current="page"
+                          href="/register">
+                          <i className="bi bi-person-fill-add"></i>
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a
+                          className="nav-link active text-light login-text"
+                          aria-current="page"
+                          href="/login">
+                          LOGIN
+                        </a>
+                        <a
+                          className="nav-link active text-light login-icon"
+                          aria-current="page"
+                          href="/login">
+                          <i className="bi bi-box-arrow-in-right "></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>

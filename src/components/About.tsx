@@ -7,7 +7,7 @@ const About: FunctionComponent<AboutProps> = () => {
   return (
     <>
       <div className="about-container text-center mb-5 py-3">
-        <img src={bcardLogo} alt="Bcard-logo" />
+        <img className="Bcard-logo" src={bcardLogo} alt="Bcard-logo" />
         <h1 className="display-1">About</h1>
         <p className="display-6">
           Welcome to <span className="fw-bold ">Bcard</span> – the new home for

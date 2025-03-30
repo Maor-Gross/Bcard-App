@@ -45,9 +45,9 @@ const Login: FunctionComponent<LoginProps> = () => {
   });
 
   return (
-    <div className="w-50 mx-auto py-3">
+    <div className="w-50 mx-auto py-3 container-form">
       <h1 className="display-1 text-center mb-4">Login</h1>
-      <form onSubmit={formik.handleSubmit}>
+      <form className="form" onSubmit={formik.handleSubmit}>
         <div className="form-floating mb-3">
           <input
             type="email"

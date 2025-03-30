@@ -13,6 +13,40 @@ footer {
   max-width: 1300px;
 }
 
+.phone-navbar {
+  gap: 1.5rem !important;
+}
+
+.user-actions {
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.sign-up-login {
+  gap: 0.5em;
+}
+
+.sign-up-text,
+.login-text {
+  display: inline;
+}
+
+.sign-up-icon,
+.login-icon {
+  display: none;
+}
+
+.form,
+.form-control,
+input {
+  z-index: 0 !important;
+}
+
+.Bcard-logo {
+  width: 25% !important;
+}
+
 @media screen and (max-width: 1200px) {
   .container-cards {
     justify-content: center !important;
@@ -24,5 +58,34 @@ footer {
 
   .card {
     width: 90% !important;
+  }
+
+  .phone-navbar {
+    justify-content: space-between;
+  }
+
+  .sign-up-login {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: unset !important;
+    gap: 1.5em;
+  }
+
+  .sign-up-text,
+  .login-text {
+    display: none;
+  }
+
+  .sign-up-icon,
+  .login-icon {
+    display: inline;
+  }
+  .container-form {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  .form {
+    width: 100% !important;
   }
 }
