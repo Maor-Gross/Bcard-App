@@ -59,7 +59,7 @@ const Cards: FunctionComponent<CardsProps> = ({
     const cardsToDisplay = searchTerm ? filteredCards : cards;
 
     return (
-      <div className=" text-center">
+      <div className=" text-center mb-5 py-3">
         <h1 className="display-1">Wellcome to Bcard</h1>
         <p className="display-6">
           the new home for your digital business card! In today's fast-paced
